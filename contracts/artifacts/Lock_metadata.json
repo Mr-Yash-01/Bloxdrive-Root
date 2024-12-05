@@ -1,0 +1,347 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "checkUserRootExists",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "path",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "folderName",
+						"type": "string"
+					}
+				],
+				"name": "createFolder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "path",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "itemName",
+						"type": "string"
+					}
+				],
+				"name": "deleteItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "path",
+						"type": "string[]"
+					}
+				],
+				"name": "getFolderData",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "createdAt",
+								"type": "uint256"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "cid",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "size",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "fileType",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "createdAt",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct Lock.FileInfo[]",
+								"name": "files",
+								"type": "tuple[]"
+							},
+							{
+								"internalType": "string[]",
+								"name": "subFolderNames",
+								"type": "string[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "name",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "cid",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "size",
+										"type": "uint256"
+									},
+									{
+										"internalType": "string",
+										"name": "fileType",
+										"type": "string"
+									},
+									{
+										"internalType": "uint256",
+										"name": "createdAt",
+										"type": "uint256"
+									}
+								],
+								"internalType": "struct Lock.FileInfo[]",
+								"name": "sharedWithMe",
+								"type": "tuple[]"
+							}
+						],
+						"internalType": "struct Lock.FolderInfo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSharedWithMeFiles",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "cid",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "size",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "fileType",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "createdAt",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Lock.FileInfo[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "initializeUserRoot",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "path",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "fileName",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					}
+				],
+				"name": "shareFileWithUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "path",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "fileName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "newCid",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "newSize",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "newFileName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "newFileType",
+						"type": "string"
+					}
+				],
+				"name": "updateFile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string[]",
+						"name": "path",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "fileName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "cid",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "size",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "fileType",
+						"type": "string"
+					}
+				],
+				"name": "uploadFile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Lock.sol": "Lock"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Lock.sol": {
+			"keccak256": "0x4606df52a3fddd3d80eea2ed01e486cc76bd36c92449b70d8915cc38ddfa3b02",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://945db413c5c730676d52f2a953af2eeced749d1f06b9a5a964feb559cc4303c9",
+				"dweb:/ipfs/QmY6ecpBaWqiLE6yv2ks4oQqzV3F9njfm85iQavRatZhrF"
+			]
+		}
+	},
+	"version": 1
+}
