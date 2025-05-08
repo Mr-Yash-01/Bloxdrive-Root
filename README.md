@@ -25,7 +25,7 @@
 
 
 ## 🧪 Running Locally
-- git clone https://github.com/your-username/bloxdrive-backend
+- git clone https://github.com/Mr-Yash-01/Bloxdrive-Root.git
 - cd bloxdrive-backend
 - npm install
 - npx hardhat test
