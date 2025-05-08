@@ -1,13 +1,31 @@
-# Sample Hardhat Project
+# 📦 BloxDrive Smart Contract (Hardhat)
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+**BloxDrive** is a decentralized smart contract system that powers secure file storage and sharing using Ethereum and IPFS. It ensures transparency and trust without relying on centralized servers.
 
-Try running some of the following tasks:
+## 🚀 Features
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+- 🧾 Ethereum-based user verification via MetaMask
+- 🗂 File metadata stored on IPFS using Pinata
+- 🔐 Smart contract access control and sharing logic
+- ✅ Ownership verification and integrity enforcement
+
+## 🔧 Tech Stack
+
+- Solidity
+- Hardhat
+- Ethers.js
+- IPFS + Pinata
+- Ethereum (Sepolia Testnet)
+
+## 📁 Project Structure
+
+- contracts/ # Smart contracts
+- scripts/ # Deployment scripts
+- test/ # Unit tests
+
+
+## 🧪 Running Locally
+- git clone https://github.com/your-username/bloxdrive-backend
+- cd bloxdrive-backend
+- npm install
+- npx hardhat test
